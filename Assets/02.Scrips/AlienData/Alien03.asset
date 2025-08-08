@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f97fc8a84741d14ca77aa06125c12ef, type: 3}
+  m_Name: Alien03
+  m_EditorClassIdentifier: 
+  planet: "\uD2B8\uB9AC\uBC84"
+  raceName: "\uB8E8\uD2F0"
+  accent: "\uD22D"
+  nature: "\uC6A9\uB9F9\uD568"
+  characterImg: {fileID: 21300000, guid: 76d3898fd31482e45a5bbe94da3be88f, type: 3}

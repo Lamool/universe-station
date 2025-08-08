@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aaa0cddc8ef0e6489a24712f3b87f5a, type: 3}
+  m_Name: Person Datas
+  m_EditorClassIdentifier: 
+  names:
+  - "\uAE40\uBBFC\uC218"
+  - "\uC774\uC751\uB355"
+  - "\uCD5C\uD558\uB9BC"
+  identifyNumbers:
+  - 123
+  - 456
+  - 789
+  addresses:
+  - "\uC218\uC131\uB3D9"
+  - "\uAE08\uC131\uB3D9"
+  - "\uBAA9\uC131\uB3D9"
+  issueDates:
+  - 2020/09/09
+  - 2019/03/23
+  - 2001/06/04
+  issuePlaces:
+  - "\uD0DC\uC591\uACC4"
+  - "\uC548\uB4DC\uB85C\uBA54\uB2E4\uACC4"
+  - "\uAC00\uC6B0\uC2DC\uC2A4\uACC4"
+  faces:
+  - {fileID: 21300000, guid: d21f88430f4686742a9440e19a98c559, type: 3}
+  eyes:
+  - {fileID: 21300000, guid: 721db44ae57fc0148907897b985c4611, type: 3}
+  - {fileID: 21300000, guid: 235d565541bbd874e88d4293a5e31f4c, type: 3}
+  - {fileID: 21300000, guid: 147f8f63a95cf4e4cbbd4a55dfd858f6, type: 3}
+  hairs:
+  - {fileID: 21300000, guid: f99c308848cc4cf449c2641eb7c64c13, type: 3}
+  - {fileID: 21300000, guid: 4cf66e4515230e24194bcee13f6ef333, type: 3}
+  - {fileID: 21300000, guid: c1529a4aa5230af43ac40105c3149c40, type: 3}
+  mouthes:
+  - {fileID: 21300000, guid: 57449ff56747a4c43bc66e50ddad9267, type: 3}
+  - {fileID: 21300000, guid: 42276d8d965946f46893cccce9c45b8b, type: 3}
+  - {fileID: 21300000, guid: 9f1e14af74aea214bbe45c40bfe8a178, type: 3}
+  noses:
+  - {fileID: 21300000, guid: 24ebe45d4d228ae4d96f55f95bb56722, type: 3}
+  - {fileID: 21300000, guid: 0c20d075511e02d4bb68aa8b5bac012f, type: 3}
+  - {fileID: 21300000, guid: 715299290fcc5674caf54fbf6404f6d6, type: 3}
+  clothes:
+  - {fileID: 21300000, guid: 1daaffea5d35b12419edea52c47c5050, type: 3}
+  - {fileID: 21300000, guid: 77606987de7574f4eba0a0408c575909, type: 3}
+  - {fileID: 21300000, guid: b1d57b1748fba2940b62f74ab414ba7e, type: 3}
