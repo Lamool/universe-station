@@ -51,17 +51,29 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d2b9e6fcd862fb74a993be9f55b221d4, type: 3}
   - {fileID: 21300000, guid: 5c208279c71debd4a916d26c19ab565e, type: 3}
   - {fileID: 21300000, guid: 934c901da726d3849babd79826ea91ea, type: 3}
+  - {fileID: 21300000, guid: 746a868d679047e48a417a98fd3da752, type: 3}
+  - {fileID: 21300000, guid: d27a757c0b34f0243a2057b7e71430ae, type: 3}
+  - {fileID: 21300000, guid: 7e043fb005190c3479efb758224bc2dc, type: 3}
   eyes:
   - {fileID: 21300000, guid: 37c958e1a02c8934cbbd11d7405a8bfd, type: 3}
   - {fileID: 21300000, guid: f878e3288f83a344d8de08dd34b8204e, type: 3}
   - {fileID: 21300000, guid: f9b3b883fde784343b58a44f745d2a5a, type: 3}
+  - {fileID: 21300000, guid: f31887d8e8f49d04282ea5b6b5343be4, type: 3}
+  - {fileID: 21300000, guid: 73428576f33f5a145998f6fe37c6b13a, type: 3}
+  - {fileID: 21300000, guid: ae9c007c52e4e694e8cc4ebc653c5ac4, type: 3}
   hairs_front: []
   hairs_back: []
   mouths:
   - {fileID: 21300000, guid: 31daa9e4a152926429c60aebe9e94a04, type: 3}
   - {fileID: 21300000, guid: 9cb23ae4e3f45974a80137a620b6c059, type: 3}
   - {fileID: 21300000, guid: b270461ef56e3a146839b4dc88a9b5b0, type: 3}
+  - {fileID: 21300000, guid: 40395a1c8526ad44b9cf1a513257b22e, type: 3}
+  - {fileID: 21300000, guid: c3e0e805965849f438ef835c8748dcc2, type: 3}
+  - {fileID: 21300000, guid: a3a33384c7f9ea74ba30f107507178a4, type: 3}
   noses:
-  - {fileID: 21300000, guid: 5d6bacefb0f441c428026de69e060e76, type: 3}
-  - {fileID: 21300000, guid: 6412697b2a8954d4fbb1eeac6d801a2b, type: 3}
+  - {fileID: 21300000, guid: 317566abf9e81604f84b69df70e4f379, type: 3}
+  - {fileID: 21300000, guid: 39b3cd74a876e7c49a8c147a4eb9b513, type: 3}
   - {fileID: 21300000, guid: 48255c5ebb4414e49ab93e1300c44f50, type: 3}
+  - {fileID: 21300000, guid: 6ea3375feb557d0478a2f924c777f459, type: 3}
+  - {fileID: 21300000, guid: f0c064e77030f3e47906dce8716d5693, type: 3}
+  - {fileID: 21300000, guid: d3594a9547a4e874a8636e31b82ff1ec, type: 3}

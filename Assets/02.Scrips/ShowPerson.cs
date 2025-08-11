@@ -112,10 +112,10 @@ int[] days = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
         for(int i = 0; i < faceImgArr.Length; i++)
         {
             if (isAlien && i==1) { //i==1: 메인 손님 이미지 인덱스
-                faceImgArr[i].sprite = alienData.faces[Random.Range(0, 3)];
-                eyeImgArr[i].sprite = alienData.eyes[Random.Range(0, 3)];
-                noseImgArr[i].sprite = alienData.noses[Random.Range(0, 3)];
-                mouthImgArr[i].sprite = alienData.mouths[Random.Range(0, 3)];
+                faceImgArr[i].sprite = alienData.faces[Random.Range(0, 6)];
+                eyeImgArr[i].sprite = alienData.eyes[Random.Range(0, 6)];
+                noseImgArr[i].sprite = alienData.noses[Random.Range(0, 6)];
+                mouthImgArr[i].sprite = alienData.mouths[Random.Range(0, 6)];
                 hairFrontImgArr[i].sprite = personData.hairs_front[idx[2]];
                 hairBackImgArr[i].sprite = personData.hairs_back[idx[2]];//앞 머리와 뒷 머리 랜덤 선택 인덱스 값 같음
             }
