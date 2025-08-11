@@ -5,22 +5,22 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638899272868047844
-    m_Hash: 2047834189
+      ticks: 638905068197118338
+    m_Hash: 377521190
   m_LockFileStatus:
     m_FilePath: C:/Users/gosu0/Desktop/universe-station/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638899272868513067
-    m_Hash: 1478815796
+      ticks: 638905068197118338
+    m_Hash: 869751497
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: C:/Users/gosu0/Desktop/universe-station/Packages
-m_EditorVersion: 2022.3.45f1 (a13dfa44d684)
+m_EditorVersion: 2022.3.62f1 (4af31df58517)
 m_ResolvedPackages:
 - packageId: com.unity.cinemachine@2.10.4
   testable: 0
@@ -129,8 +129,6 @@ m_ResolvedPackages:
     - 3.1.3
     - 3.1.4
     compatible:
-    - 2.10.1
-    - 2.10.2
     - 2.10.3
     - 2.10.4
     - 3.0.0-pre.3
@@ -202,7 +200,7 @@ m_ResolvedPackages:
     revision: 87d5dbb847c5fae7125aa05286e81b6bb012076f
     path: 
   unityLifecycle:
-    version: 2.10.1
+    version: 2.10.3
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -2594,4 +2592,4 @@ m_ResolvedPackages:
   isDeprecated: 0
   deprecationMessage: 
   fingerprint: 
-m_BuiltInPackagesHash: 4bf036992e66df8542a0e2a381a825a4a2452a54
+m_BuiltInPackagesHash: 589add9c3ae0bc06545f5c61253b1928f3e64fad
