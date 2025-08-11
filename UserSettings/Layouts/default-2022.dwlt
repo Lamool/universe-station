@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 0
     y: 42.666668
     width: 1706.6667
@@ -24,6 +25,18 @@ MonoBehaviour:
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
+=======
+    x: -1700
+    y: 178
+    width: 1520
+    height: 757
+  m_ShowMode: 4
+  m_Title: Project
+  m_RootView: {fileID: 3}
+  m_MinSize: {x: 875, y: 300}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_Maximized: 0
+>>>>>>> Dory
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -39,10 +52,17 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1358.6666
     y: 0
     width: 348
     height: 926
+=======
+    x: 1210
+    y: 0
+    width: 310
+    height: 707
+>>>>>>> Dory
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
@@ -70,8 +90,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1706.6666
     height: 976
+=======
+    width: 1520
+    height: 757
+>>>>>>> Dory
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -95,7 +120,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1706.6666
+=======
+    width: 1520
+>>>>>>> Dory
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -116,8 +145,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 956
     width: 1706.6666
+=======
+    y: 737
+    width: 1520
+>>>>>>> Dory
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -141,12 +175,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1706.6666
     height: 926
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
   controlID: 55
+=======
+    width: 1520
+    height: 707
+  m_MinSize: {x: 300, y: 100}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 0
+  controlID: 157
+>>>>>>> Dory
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -167,12 +210,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1018
     height: 926
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
   controlID: 18
+=======
+    width: 907
+    height: 707
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 8096, y: 16192}
+  vertical: 1
+  controlID: 62
+>>>>>>> Dory
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -191,8 +243,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1018
     height: 426
+=======
+    width: 907
+    height: 226
+>>>>>>> Dory
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
@@ -218,9 +275,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 426
     width: 1018
     height: 500
+=======
+    y: 226
+    width: 907
+    height: 481
+>>>>>>> Dory
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
@@ -245,6 +308,7 @@ MonoBehaviour:
   - {fileID: 12}
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1018
     y: 0
     width: 340.66663
@@ -253,6 +317,16 @@ MonoBehaviour:
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
   controlID: 56
+=======
+    x: 907
+    y: 0
+    width: 303
+    height: 707
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 8096, y: 16192}
+  vertical: 1
+  controlID: 86
+>>>>>>> Dory
   draggingID: 0
 --- !u!114 &11
 MonoBehaviour:
@@ -271,8 +345,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 340.66663
     height: 500
+=======
+    width: 303
+    height: 381
+>>>>>>> Dory
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
@@ -296,9 +375,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 500
     width: 340.66663
     height: 426
+=======
+    y: 381
+    width: 303
+    height: 326
+>>>>>>> Dory
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 18}
@@ -322,6 +407,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
+<<<<<<< HEAD
     m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
@@ -330,6 +416,16 @@ MonoBehaviour:
     y: 498.6667
     width: 1017
     height: 479
+=======
+    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: -1700
+    y: 434
+    width: 906
+    height: 460
+>>>>>>> Dory
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -361,17 +457,28 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -640
     m_HBaseRangeMax: 640
     m_VBaseRangeMin: -360
     m_VBaseRangeMax: 360
+=======
+    m_HBaseRangeMin: -960
+    m_HBaseRangeMax: 960
+    m_VBaseRangeMin: -540
+    m_VBaseRangeMax: 540
+>>>>>>> Dory
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
+<<<<<<< HEAD
     m_VSlider: 1
+=======
+    m_VSlider: 0
+>>>>>>> Dory
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -382,16 +489,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
       width: 1017
       height: 458
     m_Scale: {x: 0.63611114, y: 0.63611114}
     m_Translation: {x: 508.5, y: 228.99997}
+=======
+      width: 906
+      height: 439
+    m_Scale: {x: 0.40648147, y: 0.40648147}
+    m_Translation: {x: 452.99997, y: 219.5}
+>>>>>>> Dory
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -799.3886
       y: -359.99994
       width: 1598.7772
@@ -399,6 +514,15 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 0.63611114
   m_LastWindowPixelSize: {x: 1525.5, y: 718.5}
+=======
+      x: -1114.4419
+      y: -540
+      width: 2228.8838
+      height: 1080
+    m_MinimalGUI: 1
+  m_defaultScale: 0.40648147
+  m_LastWindowPixelSize: {x: 906, y: 460}
+>>>>>>> Dory
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -421,6 +545,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
+<<<<<<< HEAD
     m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
@@ -429,6 +554,16 @@ MonoBehaviour:
     y: 72.66667
     width: 1017
     height: 405
+=======
+    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: -1700
+    y: 208
+    width: 906
+    height: 205
+>>>>>>> Dory
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -444,7 +579,11 @@ MonoBehaviour:
       collapsed: 0
       displayed: 1
       snapOffset: {x: -180, y: -26.399994}
+<<<<<<< HEAD
       snapOffsetDelta: {x: 0, y: -0.2666626}
+=======
+      snapOffsetDelta: {x: 0, y: 0}
+>>>>>>> Dory
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -521,7 +660,11 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
+<<<<<<< HEAD
       snapOffset: {x: -112, y: -134}
+=======
+      snapOffset: {x: -112, y: -133.4}
+>>>>>>> Dory
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Orientation
@@ -826,9 +969,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 978.12, y: 549.2715, z: 253.31572}
     speed: 2
     m_Value: {x: 978.12, y: 549.2715, z: 253.31572}
+=======
+    m_Target: {x: -22.961369, y: -0.28170538, z: -1.9731104}
+    speed: 2
+    m_Value: {x: -22.961369, y: -0.28170538, z: -1.9731104}
+>>>>>>> Dory
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -874,6 +1023,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: -0.028405335, y: 0.0024839218, z: -0.00006878334, w: -0.99959993}
     speed: 2
     m_Value: {x: -0.028405337, y: 0.002483922, z: -0.00006878334, w: -0.9996}
@@ -881,6 +1031,15 @@ MonoBehaviour:
     m_Target: 660.8034
     speed: 2
     m_Value: 660.8034
+=======
+    m_Target: {x: -0.3265996, y: 0.66929865, z: -0.51496667, w: -0.42447987}
+    speed: 2
+    m_Value: {x: -0.32659933, y: 0.6692981, z: -0.51496625, w: -0.4244795}
+  m_Size:
+    m_Target: 3.5044177
+    speed: 2
+    m_Value: 3.5044177
+>>>>>>> Dory
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -921,7 +1080,11 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Asset Store
+<<<<<<< HEAD
     m_Image: {fileID: -7444545952099596278, guid: 0000000000000000d000000000000000, type: 0}
+=======
+    m_Image: {fileID: -8693916549880196297, guid: 0000000000000000d000000000000000, type: 0}
+>>>>>>> Dory
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -955,7 +1118,11 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Animator
+<<<<<<< HEAD
     m_Image: {fileID: 1711060831702674872, guid: 0000000000000000d000000000000000, type: 0}
+=======
+    m_Image: {fileID: -1673928668082335149, guid: 0000000000000000d000000000000000, type: 0}
+>>>>>>> Dory
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -1025,6 +1192,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
+<<<<<<< HEAD
     m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
@@ -1033,6 +1201,16 @@ MonoBehaviour:
     y: 72.66667
     width: 338.66663
     height: 479
+=======
+    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: -793
+    y: 208
+    width: 301
+    height: 360
+>>>>>>> Dory
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1045,10 +1223,17 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
+<<<<<<< HEAD
       scrollPos: {x: 0, y: 166}
       m_SelectedIDs: e64c0000
       m_LastClickedID: 19686
       m_ExpandedIDs: 14fbffff52480000ca480000dc480000a0490000724b00007a4b0000f84b0000c44c00003e4d0000
+=======
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 0e6a0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 12fbffff
+>>>>>>> Dory
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1088,6 +1273,7 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
+<<<<<<< HEAD
     m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
@@ -1096,6 +1282,16 @@ MonoBehaviour:
     y: 572.6667
     width: 338.66663
     height: 405
+=======
+    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: -793
+    y: 589
+    width: 301
+    height: 305
+>>>>>>> Dory
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1117,7 +1313,11 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/02.Scrips
+=======
+    - Assets
+>>>>>>> Dory
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1126,14 +1326,22 @@ MonoBehaviour:
   m_StartGridSize: 58
   m_LastFolders: []
   m_LastFoldersGridSize: -1
+<<<<<<< HEAD
   m_LastProjectPath: C:\Users\gosu0\Desktop\universe-station
+=======
+  m_LastProjectPath: C:\Users\nodor\Downloads\universe-station-main
+>>>>>>> Dory
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 22af0000
     m_LastClickedID: 44834
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000020670000226700002467000026670000286700002a6700002c6700002e6700003067000032670000
+=======
+    m_ExpandedIDs: 0000000094680000d66800000e6a0000106a0000126a0000146a0000166a0000186a00001a6a00001c6a00001e6a0000206a0000226a0000246a0000266a0000286a00002a6a00002c6a00002e6a0000306a0000326a0000
+>>>>>>> Dory
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1158,6 +1366,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 13}
     m_SelectedIDs: 
     m_LastClickedID: 0
@@ -1166,16 +1375,33 @@ MonoBehaviour:
       m_UserAcceptedRename: 0
       m_Name: 
       m_OriginalName: 
+=======
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: ffffffff0000000094680000d66800000e6a0000106a0000126a0000146a0000166a0000186a00001a6a00001c6a00001e6a0000206a0000226a0000246a0000266a0000286a00002a6a00002c6a00002e6a0000306a0000326a0000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: ColliderOn
+      m_OriginalName: ColliderOn
+>>>>>>> Dory
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
+<<<<<<< HEAD
       m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 11
+=======
+      m_UserData: 39398
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 0
+>>>>>>> Dory
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 12}
     m_SearchString: 
@@ -1233,6 +1459,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
+<<<<<<< HEAD
     m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
@@ -1241,6 +1468,16 @@ MonoBehaviour:
     y: 72.66667
     width: 347
     height: 905
+=======
+    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: -490
+    y: 208
+    width: 309
+    height: 686
+>>>>>>> Dory
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0

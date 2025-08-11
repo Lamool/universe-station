@@ -65,6 +65,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e16456bdd24286c448b40c037411279e, type: 3}
   - {fileID: 21300000, guid: eb5f4e6cacb5a9f4d84cefb5ee2d5459, type: 3}
   - {fileID: 21300000, guid: e2ae9fdbfd5b62e418994be160d89712, type: 3}
+<<<<<<< HEAD
   - {fileID: 21300000, guid: 4d13638fb758ead4dafb7bf04fe05ef4, type: 3}
   - {fileID: 21300000, guid: 06615fd6f0f903d43aaff3ace6a9f46e, type: 3}
   - {fileID: 21300000, guid: 3a59804dc55b66745a8eff1b6935f755, type: 3}
@@ -74,6 +75,17 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f78c493220d61294bbfea44dad22a438, type: 3}
   - {fileID: 21300000, guid: d1ed1b9f428f49248a1a726d6b01389e, type: 3}
   - {fileID: 21300000, guid: 6911a15e85592d04098a410c5bd3c8d6, type: 3}
+=======
+  - {fileID: 21300000, guid: 6b94ee326b278214f8abb1370beb6344, type: 3}
+  - {fileID: 21300000, guid: 06615fd6f0f903d43aaff3ace6a9f46e, type: 3}
+  - {fileID: 21300000, guid: 3a59804dc55b66745a8eff1b6935f755, type: 3}
+  hairs_back:
+  - {fileID: 21300000, guid: de69a7a79deae5d4cad49820eb9ab98b, type: 3}
+  - {fileID: 21300000, guid: 74daa2536c63476449af95e4a284baa6, type: 3}
+  - {fileID: 21300000, guid: f78c493220d61294bbfea44dad22a438, type: 3}
+  - {fileID: 21300000, guid: d1ed1b9f428f49248a1a726d6b01389e, type: 3}
+  - {fileID: 21300000, guid: 9b5b02ca02ae5d947a29f0ba2a35f05f, type: 3}
+>>>>>>> Dory
   - {fileID: 21300000, guid: 972bf81d22abf254794c00fbce03074a, type: 3}
   mouths:
   - {fileID: 21300000, guid: 8e8625a8b54d0b1459cc48b7ce22e377, type: 3}
