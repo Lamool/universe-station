@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 419db01a63307444092d450a53e5cfff, type: 3}
+  m_Name: Alien Datas
+  m_EditorClassIdentifier: 
+  names:
+  - "\uAE40\uBBFC\uC218"
+  - "\uC774\uC751\uB355"
+  - "\uCD5C\uD558\uB9BC"
+  - "\uBC15\uBBFC\uC7AC"
+  - "\uC904\uB9AC\uD0B4"
+  - "\uC720\uBA85\uD55C"
+  identifyNumbers:
+  - 123
+  - 456
+  - 789
+  - 135
+  - 246
+  - 579
+  addresses:
+  - "\uC218\uC131\uB3D9"
+  - "\uAE08\uC131\uB3D9"
+  - "\uBAA9\uC131\uB3D9"
+  - "\uD1A0\uC131\uB3D9"
+  - "\uCC9C\uC655\uB3D9"
+  - "\uD574\uC655\uB3D9"
+  issueDates:
+  - 2020/09/09
+  - 2019/03/23
+  - 2001/06/04
+  - 2023/07/24
+  - 2013/09/22
+  - 2018/11/13
+  issuePlaces:
+  - "\uD0DC\uC591\uACC4"
+  - "\uC548\uB4DC\uB85C\uBA54\uB2E4\uACC4"
+  - "\uAC00\uC6B0\uC2DC\uC2A4\uACC4"
+  - "\uC774\uC624\uACC4"
+  - "\uCE74\uC2DC\uC624\uD398\uC544\uACC4"
+  - "\uB9C8\uC824\uB780\uACC4"
+  faces:
+  - {fileID: 21300000, guid: d2b9e6fcd862fb74a993be9f55b221d4, type: 3}
+  - {fileID: 21300000, guid: 5c208279c71debd4a916d26c19ab565e, type: 3}
+  - {fileID: 21300000, guid: 934c901da726d3849babd79826ea91ea, type: 3}
+  eyes:
+  - {fileID: 21300000, guid: 37c958e1a02c8934cbbd11d7405a8bfd, type: 3}
+  - {fileID: 21300000, guid: f878e3288f83a344d8de08dd34b8204e, type: 3}
+  - {fileID: 21300000, guid: f9b3b883fde784343b58a44f745d2a5a, type: 3}
+  hairs_front: []
+  hairs_back: []
+  mouths:
+  - {fileID: 21300000, guid: 31daa9e4a152926429c60aebe9e94a04, type: 3}
+  - {fileID: 21300000, guid: 9cb23ae4e3f45974a80137a620b6c059, type: 3}
+  - {fileID: 21300000, guid: b270461ef56e3a146839b4dc88a9b5b0, type: 3}
+  noses:
+  - {fileID: 21300000, guid: 5d6bacefb0f441c428026de69e060e76, type: 3}
+  - {fileID: 21300000, guid: 6412697b2a8954d4fbb1eeac6d801a2b, type: 3}
+  - {fileID: 21300000, guid: 48255c5ebb4414e49ab93e1300c44f50, type: 3}

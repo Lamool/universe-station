@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 419db01a63307444092d450a53e5cfff, type: 3}
+  m_Name: Person Datas Ver2
+  m_EditorClassIdentifier: 
+  names:
+  - "\uAE40\uBBFC\uC218"
+  - "\uC774\uC751\uB355"
+  - "\uCD5C\uD558\uB9BC"
+  - "\uBC15\uBBFC\uC7AC"
+  - "\uC904\uB9AC\uD0B4"
+  - "\uC720\uBA85\uD55C"
+  identifyNumbers:
+  - 123
+  - 456
+  - 789
+  - 135
+  - 246
+  - 579
+  addresses:
+  - "\uC218\uC131\uB3D9"
+  - "\uAE08\uC131\uB3D9"
+  - "\uBAA9\uC131\uB3D9"
+  - "\uD1A0\uC131\uB3D9"
+  - "\uCC9C\uC655\uB3D9"
+  - "\uD574\uC655\uB3D9"
+  issueDates:
+  - 2020/09/09
+  - 2019/03/23
+  - 2001/06/04
+  - 2023/07/24
+  - 2013/09/22
+  - 2018/11/13
+  issuePlaces:
+  - "\uD0DC\uC591\uACC4"
+  - "\uC548\uB4DC\uB85C\uBA54\uB2E4\uACC4"
+  - "\uAC00\uC6B0\uC2DC\uC2A4\uACC4"
+  - "\uC774\uC624\uACC4"
+  - "\uCE74\uC2DC\uC624\uD398\uC544\uACC4"
+  - "\uB9C8\uC824\uB780\uACC4"
+  faces:
+  - {fileID: 21300000, guid: 25d8b73a9c5055948b221cf1f0da2759, type: 3}
+  - {fileID: 21300000, guid: 74aaa612a90f3304ebc498ca33638b94, type: 3}
+  - {fileID: 21300000, guid: a22dadb4ee4ee3a4fac5793992b2b64f, type: 3}
+  - {fileID: 21300000, guid: 4c8b57e2b0023884887114ac2c52d53a, type: 3}
+  - {fileID: 21300000, guid: 1a9e7ce1639d1444cbb1932df3f4d7c0, type: 3}
+  - {fileID: 21300000, guid: 41084eb436f4a4a4397f25765cc6296d, type: 3}
+  eyes:
+  - {fileID: 21300000, guid: dbdf20399b62efb41a6cb575ac57fcf8, type: 3}
+  - {fileID: 21300000, guid: 48cc990b5d98c8645a6496cc2a354414, type: 3}
+  - {fileID: 21300000, guid: e55faf004b2e15f4f80db98c843588c6, type: 3}
+  - {fileID: 21300000, guid: 9132f4a3ba1252e49bb73d0d8af686d7, type: 3}
+  - {fileID: 21300000, guid: d5a34671ed8876e448e51936226c1c4e, type: 3}
+  - {fileID: 21300000, guid: ae82f39b4f2f04e4bb5b8d7fa4dd860a, type: 3}
+  hairs_front:
+  - {fileID: 21300000, guid: e16456bdd24286c448b40c037411279e, type: 3}
+  - {fileID: 21300000, guid: eb5f4e6cacb5a9f4d84cefb5ee2d5459, type: 3}
+  - {fileID: 21300000, guid: e2ae9fdbfd5b62e418994be160d89712, type: 3}
+  - {fileID: 21300000, guid: 4d13638fb758ead4dafb7bf04fe05ef4, type: 3}
+  - {fileID: 21300000, guid: 06615fd6f0f903d43aaff3ace6a9f46e, type: 3}
+  - {fileID: 21300000, guid: 3a59804dc55b66745a8eff1b6935f755, type: 3}
+  hairs_back:
+  - {fileID: 21300000, guid: 6b94ee326b278214f8abb1370beb6344, type: 3}
+  - {fileID: 21300000, guid: 74daa2536c63476449af95e4a284baa6, type: 3}
+  - {fileID: 21300000, guid: f78c493220d61294bbfea44dad22a438, type: 3}
+  - {fileID: 21300000, guid: d1ed1b9f428f49248a1a726d6b01389e, type: 3}
+  - {fileID: 21300000, guid: 6911a15e85592d04098a410c5bd3c8d6, type: 3}
+  - {fileID: 21300000, guid: 972bf81d22abf254794c00fbce03074a, type: 3}
+  mouths:
+  - {fileID: 21300000, guid: 8e8625a8b54d0b1459cc48b7ce22e377, type: 3}
+  - {fileID: 21300000, guid: 068fbff3d90e70b49bda6c2162248926, type: 3}
+  - {fileID: 21300000, guid: 525b2adff3f9dcd48a170c84c3503b3b, type: 3}
+  - {fileID: 21300000, guid: adf51ade5470889449516f7c8cd79c9a, type: 3}
+  - {fileID: 21300000, guid: 313f9eca70a76314fa01c0319d4cf2b8, type: 3}
+  - {fileID: 21300000, guid: 31f71de5e757c4e4b9f8448bb3e5c2c5, type: 3}
+  noses:
+  - {fileID: 21300000, guid: 001f02b6f9c8a2c4b9fc49bf1e61b655, type: 3}
+  - {fileID: 21300000, guid: 59299735fcbdf424987b6ef23f9b6764, type: 3}
+  - {fileID: 21300000, guid: 09cfd3ebe5086b74bbb8155c451801eb, type: 3}
+  - {fileID: 21300000, guid: 9ff485f970f39db4fbf272bd7c2bd56b, type: 3}
+  - {fileID: 21300000, guid: 36ff728f5d15070428928ec29301d265, type: 3}
+  - {fileID: 21300000, guid: 3a63ec4522b689043a78cb823b86a357, type: 3}
