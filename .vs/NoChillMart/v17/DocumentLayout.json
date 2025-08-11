@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\NDR\\[teamPop1]NoChillMart\\NoChillMart\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{90651BA1-8F59-7E71-64E7-7D4F6D50479C}|Assembly-CSharp.csproj|d:\\ndr\\[teampop1]nochillmart\\nochillmart\\assets\\02.scrips\\persondatas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90651BA1-8F59-7E71-64E7-7D4F6D50479C}|Assembly-CSharp.csproj|solutionrelative:assets\\02.scrips\\persondatas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90651BA1-8F59-7E71-64E7-7D4F6D50479C}|Assembly-CSharp.csproj|D:\\NDR\\[teamPop1]NoChillMart\\NoChillMart\\assets\\02.scrips\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90651BA1-8F59-7E71-64E7-7D4F6D50479C}|Assembly-CSharp.csproj|solutionrelative:assets\\02.scrips\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90651BA1-8F59-7E71-64E7-7D4F6D50479C}|Assembly-CSharp.csproj|D:\\NDR\\[teamPop1]NoChillMart\\NoChillMart\\assets\\02.scrips\\showperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90651BA1-8F59-7E71-64E7-7D4F6D50479C}|Assembly-CSharp.csproj|solutionrelative:assets\\02.scrips\\showperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\NDR\\[teamPop1]NoChillMart\\NoChillMart\\Library\\PackageCache\\com.unity.cinemachine@2.10.4\\Editor\\Editors\\CinemachineVirtualCameraBaseEditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.cinemachine@2.10.4\\Editor\\Editors\\CinemachineVirtualCameraBaseEditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90651BA1-8F59-7E71-64E7-7D4F6D50479C}|Assembly-CSharp.csproj|D:\\NDR\\[teamPop1]NoChillMart\\NoChillMart\\assets\\02.scrips\\footbtnforentercounterui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90651BA1-8F59-7E71-64E7-7D4F6D50479C}|Assembly-CSharp.csproj|solutionrelative:assets\\02.scrips\\footbtnforentercounterui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90651BA1-8F59-7E71-64E7-7D4F6D50479C}|Assembly-CSharp.csproj|D:\\NDR\\[teamPop1]NoChillMart\\NoChillMart\\assets\\02.scrips\\testfolder\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90651BA1-8F59-7E71-64E7-7D4F6D50479C}|Assembly-CSharp.csproj|solutionrelative:assets\\02.scrips\\testfolder\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90651BA1-8F59-7E71-64E7-7D4F6D50479C}|Assembly-CSharp.csproj|D:\\NDR\\[teamPop1]NoChillMart\\NoChillMart\\assets\\02.scrips\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90651BA1-8F59-7E71-64E7-7D4F6D50479C}|Assembly-CSharp.csproj|solutionrelative:assets\\02.scrips\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "D:\\NDR\\[teamPop1]NoChillMart\\NoChillMart\\Assets\\02.Scrips\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\02.Scrips\\PlayerMovement.cs",
+              "ToolTip": "D:\\NDR\\[teamPop1]NoChillMart\\NoChillMart\\Assets\\02.Scrips\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\02.Scrips\\PlayerMovement.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T10:36:52.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonDatas.cs",
+              "DocumentMoniker": "D:\\NDR\\[teamPop1]NoChillMart\\NoChillMart\\Assets\\02.Scrips\\PersonDatas.cs",
+              "RelativeDocumentMoniker": "Assets\\02.Scrips\\PersonDatas.cs",
+              "ToolTip": "D:\\NDR\\[teamPop1]NoChillMart\\NoChillMart\\Assets\\02.Scrips\\PersonDatas.cs",
+              "RelativeToolTip": "Assets\\02.Scrips\\PersonDatas.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T10:38:03.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "D:\\NDR\\[teamPop1]NoChillMart\\NoChillMart\\Assets\\02.Scrips\\UIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\02.Scrips\\UIManager.cs",
+              "ToolTip": "D:\\NDR\\[teamPop1]NoChillMart\\NoChillMart\\Assets\\02.Scrips\\UIManager.cs",
+              "RelativeToolTip": "Assets\\02.Scrips\\UIManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T10:54:11.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ShowPerson.cs",
+              "DocumentMoniker": "D:\\NDR\\[teamPop1]NoChillMart\\NoChillMart\\Assets\\02.Scrips\\ShowPerson.cs",
+              "RelativeDocumentMoniker": "Assets\\02.Scrips\\ShowPerson.cs",
+              "ToolTip": "D:\\NDR\\[teamPop1]NoChillMart\\NoChillMart\\Assets\\02.Scrips\\ShowPerson.cs",
+              "RelativeToolTip": "Assets\\02.Scrips\\ShowPerson.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAUwFEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T10:54:12.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CinemachineVirtualCameraBaseEditor.cs",
+              "DocumentMoniker": "D:\\NDR\\[teamPop1]NoChillMart\\NoChillMart\\Library\\PackageCache\\com.unity.cinemachine@2.10.4\\Editor\\Editors\\CinemachineVirtualCameraBaseEditor.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.cinemachine@2.10.4\\Editor\\Editors\\CinemachineVirtualCameraBaseEditor.cs",
+              "ToolTip": "D:\\NDR\\[teamPop1]NoChillMart\\NoChillMart\\Library\\PackageCache\\com.unity.cinemachine@2.10.4\\Editor\\Editors\\CinemachineVirtualCameraBaseEditor.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.cinemachine@2.10.4\\Editor\\Editors\\CinemachineVirtualCameraBaseEditor.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAD4v2kAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T10:40:08.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FootBtnForEnterCounterUI.cs",
+              "DocumentMoniker": "D:\\NDR\\[teamPop1]NoChillMart\\NoChillMart\\Assets\\02.Scrips\\FootBtnForEnterCounterUI.cs",
+              "RelativeDocumentMoniker": "Assets\\02.Scrips\\FootBtnForEnterCounterUI.cs",
+              "ToolTip": "D:\\NDR\\[teamPop1]NoChillMart\\NoChillMart\\Assets\\02.Scrips\\FootBtnForEnterCounterUI.cs",
+              "RelativeToolTip": "Assets\\02.Scrips\\FootBtnForEnterCounterUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T11:13:12.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\NDR\\[teamPop1]NoChillMart\\NoChillMart\\Assets\\02.Scrips\\TestFolder\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\02.Scrips\\TestFolder\\GameManager.cs",
+              "ToolTip": "D:\\NDR\\[teamPop1]NoChillMart\\NoChillMart\\Assets\\02.Scrips\\TestFolder\\GameManager.cs",
+              "RelativeToolTip": "Assets\\02.Scrips\\TestFolder\\GameManager.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwDIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T11:38:51.473Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
