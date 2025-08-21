@@ -64,7 +64,7 @@ public class UIManager : MonoBehaviour
         gameObject.GetComponent<ShowPerson>().CheckAlien(false);
         ShowConversation(2);
         StartCoroutine(WaitReset());
-        gameObject.GetComponent<ItemManager>().UpdateSaleText(0);
+        gameObject.GetComponent<ItemManager>().UpdateSaleText();
     }
 
     public void ShowTroubleMakerOutAction()
