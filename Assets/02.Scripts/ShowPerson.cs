@@ -1,3 +1,4 @@
+ 
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
@@ -34,34 +35,99 @@ public class ShowPerson : MonoBehaviour
     public Font pyeongChangFont;
     public infoDatas infoData;
 
+    /*
+     * 에일리언 나타날 확률 조정
+     * true : 0.7
+     * false : 1.3
+    */
+
+    public bool isAlianCheck()
+    {
+        float alienProbability = Random.Range(0.0f, 2.0f);
+        isAlien = (alienProbability < 1.3f) ? false : true;
+        return isAlien;
+    }
     public void GenerateCustormer()
     {
         GameManager.Instance.DayCount++;
         int len = 6;
-        float alienProbability = Random.Range(0.0f, 2.0f);
-        isAlien = (alienProbability < 1.3f) ? false : true; 
+        //float alienProbability = Random.Range(0.0f, 2.0f);
+        //isAlien = (alienProbability < 1.3f) ? false : true; 
         int[] idx = new int[len-1];
+        int countStar = 3;
         for(int i = 0; i < idx.Length; i++)
         {
             idx[i] = Random.Range(0, 6);
             //Debug.Log(idx[i]);
         }
         string address = GenerateAddress();
-        string INum = isAlien ? FalsifyINum() : GenerateINum();
+        string INum = isAlianCheck() ? FalsifyINum() : GenerateINum();
         string name = GenerateName();
-        string pubDate = GenerateIDate(INum.Substring(0, 8), isAlien);
+        string pubDate = GenerateIDate(INum.Substring(0, 8), isAlianCheck());
 
         if (!isAlien)
             infoTextINum.font = nanumFont;
 
-        infoTextName.text = $"이름 : {name}";
-        infoTextINumText.text = "주민 번호 : ";
-        infoTextINum.text = $"{INum}";
-        infoTextEtc.text = $"주소 : {address}\n" +
-            $"발급 일자 : {pubDate}\n" +
-            $"발급 장소 : {address}청";
+        // 난이도 1 2 3 에 따른 주민등록증 정보 공개 범위 설정
+        /* 난이도1: 이름
+         * 난이도2: 이름, 주민번호
+         * 난이도3: 이름, 주민번호, 주소, 발급일자
+         * 이름, 주소의 경우 isAlianCheck() = true면 기존정보와 다른 값으로 생성
+            */
+        if (countStar==1)
+        {
+            Debug.Log("1번");
+            infoTextName.text = $"이름 : {(isAlianCheck() ? GenerateName() : name)}";
 
-        string MemoNum = GenerateINum();
+            infoTextINumText.text = "주민 번호 : ";
+            infoTextINum.text = $"{INum}";
+            infoTextEtc.text = $"주소 : {address}\n" +
+                $"발급 일자 : {pubDate}\n" +
+                $"발급 장소 : {address}청";
+        }
+
+        else if (countStar==2)
+        {
+            Debug.Log("2번");
+            Debug.Log("2번 GenerateName" + GenerateName());
+            Debug.Log("2번 name" + name);
+            infoTextName.text = $"이름 : {(isAlianCheck() ? GenerateName() : name)}";
+            infoTextINumText.text = "주민 번호 : ";
+            infoTextINum.text = $"{INum}";
+
+            infoTextEtc.text = $"주소 : {address}\n" +
+                $"발급 일자 : {pubDate}\n" +
+                $"발급 장소 : {address}청";
+        }
+        else if (countStar==3)
+        {
+            Debug.Log("3번 GenerateName" + GenerateName());
+            Debug.Log("3번 name" + name);
+            Debug.Log("3번 pubDate" + pubDate);
+            infoTextName.text = $"이름 : {(isAlianCheck() ? GenerateName() : name)}";
+            
+            infoTextINumText.text = "주민 번호 : ";
+            infoTextINum.text = $"{INum}";
+            Debug.Log("3번 infoTextName.text" + infoTextName.text);
+            infoTextEtc.text = $"주소 : {address}\n" +
+                $"발급 일자 : {pubDate}\n" +
+                $"발급 장소 : {(isAlianCheck() ? GenerateAddress() : address)}청";
+
+            Debug.Log("3번 infoTextEtc.text" + infoTextEtc.text);
+        }
+        else
+        {
+            Debug.Log("잘못된 설정입니다.");
+        }
+            //주민등록증 값 설정
+            /*infoTextName.text = $"이름 : {name}";
+            infoTextINumText.text = "주민 번호 : ";
+            infoTextINum.text = $"{INum}";
+            infoTextEtc.text = $"주소 : {address}\n" +
+                $"발급 일자 : {pubDate}\n" +
+                $"발급 장소 : {address}청";*/
+
+            string MemoNum = GenerateINum();
 
         //메모값 설정
         textName.text = $"이름 : {name}";
