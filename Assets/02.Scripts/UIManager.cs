@@ -59,27 +59,28 @@ public class UIManager : MonoBehaviour
         UIArr[idx].gameObject.SetActive(isShowUIArr[idx]);
     }
 
-    public void ShowPassAction()
+    private void CustomerCheck(int type)
     {
         if (GameManager.Instance.IsGameOver) return;
-        gameObject.GetComponent<ShowPerson>().CheckAlien(false);
-        ShowConversation(2);
+        ShowConversation(type);
+        gameObject.GetComponent<ShowPerson>().CheckCustomer(type);
         StartCoroutine(WaitReset());
+    }
+
+    public void ShowPassAction()
+    {
+        CustomerCheck(2);
         gameObject.GetComponent<ItemManager>().UpdateSaleText();
     }
 
     public void ShowTroubleMakerOutAction()
     {
-        if (GameManager.Instance.IsGameOver) return;
-        ShowConversation(3);
-        StartCoroutine(WaitReset());
+        CustomerCheck(3);
     }
 
     public void ShowAlienOutAction()
     {
-        if (GameManager.Instance.IsGameOver) return;
-        ShowConversation(4);
-        StartCoroutine(WaitReset());
+        CustomerCheck(4);
     }
 
     public void ShowConversation(int idx)

@@ -1,7 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Globalization;
-using System.Reflection;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -29,6 +27,7 @@ public class ShowPerson : MonoBehaviour
     public PersonData_ver2 personData;
     public PersonData_ver2 alienData;
     bool isAlien = false;
+    bool isTroubleMaker = false;
 
     public Font nanumFont;
     public Font pyeongChangFont;
@@ -50,11 +49,14 @@ public class ShowPerson : MonoBehaviour
     {
         GameManager.Instance.DayCount++;
         int len = 6;
-        //float alienProbability = Random.Range(0.0f, 2.0f);
-        //isAlien = (alienProbability < 1.3f) ? false : true; 
-        int[] idx = new int[len-1];
+        float alienProbability = Random.Range(0.0f, 2.0f);
+        isAlien = (alienProbability < 1.3f) ? false : true;
+
+        CustomerTypeCheck(); //일반 손님/진상/외계인 종류별 집계 - 결말을 위한 정답률 계산에 필요
+
+        int[] idx = new int[len - 1];
         int countStar = 3;
-        for(int i = 0; i < idx.Length; i++)
+        for (int i = 0; i < idx.Length; i++)
         {
             idx[i] = Random.Range(0, 6);
             //Debug.Log(idx[i]);
@@ -73,11 +75,13 @@ public class ShowPerson : MonoBehaviour
          * 난이도3: 이름, 주민번호, 주소, 발급일자
          * 이름, 주소의 경우 isAlianCheck() = true면 기존정보와 다른 값으로 생성
             */
-        if (countStar==1)
-        {
-            Debug.Log("1번");
-            infoTextName.text = $"이름 : {(isAlianCheck() ? GenerateName() : name)}";
 
+        countStar = 1; //*************
+        if (countStar == 1)
+        {
+            //Debug.Log("1번");
+            infoTextName.text = $"이름 : {name}"; //*************
+            //infoTextName.text = $"이름 : {(isAlianCheck() ? GenerateName() : name)}";
             infoTextINumText.text = "주민 번호 : ";
             infoTextINum.text = $"{INum}";
             infoTextEtc.text = $"주소 : {address}\n" +
@@ -85,11 +89,11 @@ public class ShowPerson : MonoBehaviour
                 $"발급 장소 : {address}청";
         }
 
-        else if (countStar==2)
+        else if (countStar == 2)
         {
-            Debug.Log("2번");
-            Debug.Log("2번 GenerateName" + GenerateName());
-            Debug.Log("2번 name" + name);
+            //Debug.Log("2번");
+            //Debug.Log("2번 GenerateName" + GenerateName());
+            //Debug.Log("2번 name" + name);
             infoTextName.text = $"이름 : {(isAlianCheck() ? GenerateName() : name)}";
             infoTextINumText.text = "주민 번호 : ";
             infoTextINum.text = $"{INum}";
@@ -98,35 +102,35 @@ public class ShowPerson : MonoBehaviour
                 $"발급 일자 : {pubDate}\n" +
                 $"발급 장소 : {address}청";
         }
-        else if (countStar==3)
+        else if (countStar == 3)
         {
-            Debug.Log("3번 GenerateName" + GenerateName());
-            Debug.Log("3번 name" + name);
-            Debug.Log("3번 pubDate" + pubDate);
+            //Debug.Log("3번 GenerateName" + GenerateName());
+            //Debug.Log("3번 name" + name);
+            //Debug.Log("3번 pubDate" + pubDate);
             infoTextName.text = $"이름 : {(isAlianCheck() ? GenerateName() : name)}";
-            
+
             infoTextINumText.text = "주민 번호 : ";
             infoTextINum.text = $"{INum}";
-            Debug.Log("3번 infoTextName.text" + infoTextName.text);
+            //Debug.Log("3번 infoTextName.text" + infoTextName.text);
             infoTextEtc.text = $"주소 : {address}\n" +
                 $"발급 일자 : {pubDate}\n" +
                 $"발급 장소 : {(isAlianCheck() ? GenerateAddress() : address)}청";
 
-            Debug.Log("3번 infoTextEtc.text" + infoTextEtc.text);
+            //Debug.Log("3번 infoTextEtc.text" + infoTextEtc.text);
         }
         else
         {
             Debug.Log("잘못된 설정입니다.");
         }
-            //주민등록증 값 설정
-            /*infoTextName.text = $"이름 : {name}";
-            infoTextINumText.text = "주민 번호 : ";
-            infoTextINum.text = $"{INum}";
-            infoTextEtc.text = $"주소 : {address}\n" +
-                $"발급 일자 : {pubDate}\n" +
-                $"발급 장소 : {address}청";*/
+        //주민등록증 값 설정
+        /*infoTextName.text = $"이름 : {name}";
+        infoTextINumText.text = "주민 번호 : ";
+        infoTextINum.text = $"{INum}";
+        infoTextEtc.text = $"주소 : {address}\n" +
+            $"발급 일자 : {pubDate}\n" +
+            $"발급 장소 : {address}청";*/
 
-            string MemoNum = GenerateINum();
+        string MemoNum = GenerateINum();
 
         //메모값 설정
         textName.text = $"이름 : {name}";
@@ -138,7 +142,8 @@ public class ShowPerson : MonoBehaviour
 
         for (int i = 0; i < faceImgArr.Length; i++)
         {
-            if (isAlien && i==1) { //i==1: 메인 손님 이미지 인덱스
+            if (isAlien && i == 1)
+            { //i==1: 메인 손님 이미지 인덱스
                 faceImgArr[i].sprite = alienData.faces[Random.Range(0, 7)];
                 eyeImgArr[i].sprite = alienData.eyes[Random.Range(0, 7)];
                 noseImgArr[i].sprite = alienData.noses[Random.Range(0, 7)];
@@ -146,7 +151,8 @@ public class ShowPerson : MonoBehaviour
                 hairFrontImgArr[i].sprite = personData.hairs_front[idx[2]];
                 hairBackImgArr[i].sprite = personData.hairs_back[idx[2]];//앞 머리와 뒷 머리 랜덤 선택 인덱스 값 같음
             }
-            else {
+            else
+            {
                 faceImgArr[i].sprite = personData.faces[idx[0]];
                 eyeImgArr[i].sprite = personData.eyes[idx[1]];
                 hairFrontImgArr[i].sprite = personData.hairs_front[idx[2]];
@@ -155,7 +161,17 @@ public class ShowPerson : MonoBehaviour
                 mouthImgArr[i].sprite = personData.mouths[idx[4]];
             }
         }
-        
+
+    }
+
+    private void CustomerTypeCheck()
+    {
+        if (isAlien) GameManager.Instance.TotalAlien++;
+        else
+        {
+            if (isTroubleMaker) GameManager.Instance.TotalTM++;
+            else GameManager.Instance.TotalNP++;
+        }
     }
 
     public string GenerateName()
@@ -212,7 +228,7 @@ public class ShowPerson : MonoBehaviour
             birthYear = (int.Parse(birthDate[7] + " ") > 2 ? 2000 : 1900) + int.Parse(birthDate.Substring(0, 2));
             birthMonth = int.Parse(birthDate.Substring(2, 2));
             birthDay = int.Parse(birthDate.Substring(4, 2));
-            Debug.Log(birthDate+" "+birthYear+" "+birthMonth+" "+birthDay);
+            //Debug.Log(birthDate+" "+birthYear+" "+birthMonth+" "+birthDay);
             //민증은 만 17세가 된 생일날 다음 날부터 1년 간 발급 가능
             year = Random.Range(birthYear + 17, birthYear + 17 + 2);
             //만 17세가 된 해에 발급 받음
@@ -254,9 +270,25 @@ public class ShowPerson : MonoBehaviour
         return $"{year.ToString()}. {month.ToString("D2")}. {day.ToString("D2")}";
     }
 
-    public void CheckAlien(bool answer)
+    public void CheckCustomer(int type)
     {
-        if (isAlien != answer) GameManager.Instance.ReduceLife();
+        if(type == 2) //일반 손님인지 체크
+        {
+            if (isAlien == false && isTroubleMaker == false) GameManager.Instance.NPCheck++;
+            Debug.Log($"일반 손님 정답 수 : {GameManager.Instance.NPCheck}");
+        }
+        else if(type == 3) //진상인지 체크
+        {
+            if (isAlien == false && isTroubleMaker == true) GameManager.Instance.TMCheck++;
+            Debug.Log($"진상 손님 정답 수 : {GameManager.Instance.TMCheck}");
+
+        }
+        else if(type == 4) //외계인인지 체크
+        {
+            if (isAlien == true) GameManager.Instance.AlienCheck++;
+            Debug.Log($"외계인 정답 수 : {GameManager.Instance.AlienCheck / GameManager.Instance.TotalAlien}");
+        }
+        
     }
 
     // 주민번호 변조

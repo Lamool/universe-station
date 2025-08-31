@@ -3314,7 +3314,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b699ceeeced319498be39059a0423a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  TotalTM: 0
+  TotalAlien: 0
+  TotalNP: 0
+  TMCheck: 0
+  AlienCheck: 0
+  NPCheck: 0
   day: 1
   dayCount: 0
 --- !u!4 &430771363

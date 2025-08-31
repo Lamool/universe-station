@@ -6,7 +6,12 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    public int life = 3;
+    public int TotalTM;
+    public int TotalAlien;
+    public int TotalNP;
+    public int TMCheck;//진상 수 체크
+    public int AlienCheck;//외계인 정답 수 체크
+    public int NPCheck; //진상 아닌 일반 사람 정답 수 체크
     private bool isGameOver = false;
     public int day = 1;
     public int dayCount = 0;
@@ -48,17 +53,17 @@ public class GameManager : MonoBehaviour
         else if (GameManager.Instance != this) Destroy(gameObject);
     }
 
-    public void ReduceLife()
-    {
-        if (isGameOver) return;
-        life--;
-        Debug.Log($"틀렸습니다. 남은 기회 : {life}");
-        if (life <= 0) 
-        {
-            isGameOver = true;
-            Debug.Log("게임 오버");
-        }
-    }
+    //public void ReduceLife()
+    //{
+    //    if (isGameOver) return;
+    //    life--;
+    //    Debug.Log($"틀렸습니다. 남은 기회 : {life}");
+    //    if (life <= 0) 
+    //    {
+    //        isGameOver = true;
+    //        Debug.Log("게임 오버");
+    //    }
+    //}
 
 
 }
