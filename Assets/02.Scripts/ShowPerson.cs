@@ -26,6 +26,7 @@ public class ShowPerson : MonoBehaviour
     public Text textINum;
     public Text textEtc;
 
+    //Å×½ºÆ®
     public PersonData_ver2 personData;
     public PersonData_ver2 alienData;
     bool isAlien = false;
