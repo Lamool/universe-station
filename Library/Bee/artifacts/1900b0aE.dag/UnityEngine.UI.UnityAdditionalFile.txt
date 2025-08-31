@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-C:\Users\gosu0\Desktop\universe-station
-=======
-C:\Users\nodor\Downloads\universe-station-main
->>>>>>> Dory
