@@ -3505,6 +3505,7 @@ MonoBehaviour:
   alienData: {fileID: 11400000, guid: 68ca21bc45eff854fa313d796545e856, type: 2}
   nanumFont: {fileID: 12800000, guid: 2eca58515978f7140a2c04dbab233b2d, type: 3}
   pyeongChangFont: {fileID: 12800000, guid: 10fe533489880f546b86a7ad70f5181b, type: 3}
+  infoData: {fileID: 11400000, guid: 01746b8a5e133a34ab88c83834e93c6b, type: 2}
 --- !u!4 &449492333
 Transform:
   m_ObjectHideFlags: 0
