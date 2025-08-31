@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/02.Scripts/Info Data.asset.meta
 guid: 01746b8a5e133a34ab88c83834e93c6b
+========
+guid: 68ca21bc45eff854fa313d796545e856
+>>>>>>>> khj:Assets/02.Scripts/TestFolder/Alien Datas.asset.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 11400000
