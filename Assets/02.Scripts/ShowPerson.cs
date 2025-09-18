@@ -17,13 +17,13 @@ public class ShowPerson : MonoBehaviour
     public Text infoTextINum;
     public Text infoTextEtc;
 
-    //ÁÖ¹ÎÁ¤º¸ °ü·ÃµÈ ¸Ş¸ğ »ı¼º
+    //ì£¼ë¯¼ì •ë³´ ê´€ë ¨ëœ ë©”ëª¨ ìƒì„±
     public Text textName;
     public Text textINumText;
     public Text textINum;
     public Text textEtc;
 
-    //Å×½ºÆ®
+    //í…ŒìŠ¤íŠ¸
     public PersonData_ver2 personData;
     public PersonData_ver2 alienData;
     bool isAlien = false;
@@ -33,18 +33,7 @@ public class ShowPerson : MonoBehaviour
     public Font pyeongChangFont;
     public infoDatas infoData;
 
-    /*
-     * ¿¡ÀÏ¸®¾ğ ³ªÅ¸³¯ È®·ü Á¶Á¤
-     * true : 0.7
-     * false : 1.3
-    */
 
-    public bool isAlianCheck()
-    {
-        float alienProbability = Random.Range(0.0f, 2.0f);
-        isAlien = (alienProbability < 1.3f) ? false : true;
-        return isAlien;
-    }
     public void GenerateCustormer()
     {
         GameManager.Instance.DayCount++;
@@ -52,7 +41,7 @@ public class ShowPerson : MonoBehaviour
         float alienProbability = Random.Range(0.0f, 2.0f);
         isAlien = (alienProbability < 1.3f) ? false : true;
 
-        CustomerTypeCheck(); //ÀÏ¹İ ¼Õ´Ô/Áø»ó/¿Ü°èÀÎ Á¾·ùº° Áı°è - °á¸»À» À§ÇÑ Á¤´ä·ü °è»ê¿¡ ÇÊ¿ä
+        CustomerTypeCheck(); //ì¼ë°˜ ì†ë‹˜/ì§„ìƒ/ì™¸ê³„ì¸ ì¢…ë¥˜ë³„ ì§‘ê³„ - ê²°ë§ì„ ìœ„í•œ ì •ë‹µë¥  ê³„ì‚°ì— í•„ìš”
 
         int[] idx = new int[len - 1];
         int countStar = 3;
@@ -61,102 +50,78 @@ public class ShowPerson : MonoBehaviour
             idx[i] = Random.Range(0, 6);
             //Debug.Log(idx[i]);
         }
+        //ì •ìƒê°’
         string address = GenerateAddress();
-        string INum = isAlianCheck() ? FalsifyINum() : GenerateINum();
+        //string INum = isAlien ? FalsifyINum() : GenerateINum();
+        string INum = GenerateINum();
         string name = GenerateName();
-        string pubDate = GenerateIDate(INum.Substring(0, 8), isAlianCheck());
+        string pubDate = GenerateIDate(INum.Substring(0, 8), false);
+
+        string MemoNum = GenerateINum();
 
         if (!isAlien)
             infoTextINum.font = nanumFont;
 
-        // ³­ÀÌµµ 1 2 3 ¿¡ µû¸¥ ÁÖ¹Îµî·ÏÁõ Á¤º¸ °ø°³ ¹üÀ§ ¼³Á¤
-        /* ³­ÀÌµµ1: ÀÌ¸§
-         * ³­ÀÌµµ2: ÀÌ¸§, ÁÖ¹Î¹øÈ£
-         * ³­ÀÌµµ3: ÀÌ¸§, ÁÖ¹Î¹øÈ£, ÁÖ¼Ò, ¹ß±ŞÀÏÀÚ
-         * ÀÌ¸§, ÁÖ¼ÒÀÇ °æ¿ì isAlianCheck() = true¸é ±âÁ¸Á¤º¸¿Í ´Ù¸¥ °ªÀ¸·Î »ı¼º
+        // ë‚œì´ë„ 1 2 3 ì— ë”°ë¥¸ ì£¼ë¯¼ë“±ë¡ì¦ ì •ë³´ ê³µê°œ ë²”ìœ„ ì„¤ì •
+        /* ë‚œì´ë„1: ì´ë¦„
+         * ë‚œì´ë„2: ì´ë¦„, ì£¼ë¯¼ë²ˆí˜¸
+         * ë‚œì´ë„3: ì´ë¦„, ì£¼ë¯¼ë²ˆí˜¸, ì£¼ì†Œ, ë°œê¸‰ì¼ì
+         * ì´ë¦„, ì£¼ì†Œì˜ ê²½ìš° isAlianCheck() = trueë©´ ê¸°ì¡´ì •ë³´ì™€ ë‹¤ë¥¸ ê°’ìœ¼ë¡œ ìƒì„±
             */
 
         countStar = 1; //*************
+        
         if (countStar == 1)
         {
-            //Debug.Log("1¹ø");
-            infoTextName.text = $"ÀÌ¸§ : {name}"; //*************
-            //infoTextName.text = $"ÀÌ¸§ : {(isAlianCheck() ? GenerateName() : name)}";
-            infoTextINumText.text = "ÁÖ¹Î ¹øÈ£ : ";
-            infoTextINum.text = $"{INum}";
-            infoTextEtc.text = $"ÁÖ¼Ò : {address}\n" +
-                $"¹ß±Ş ÀÏÀÚ : {pubDate}\n" +
-                $"¹ß±Ş Àå¼Ò : {address}Ã»";
-        }
+            infoTextName.text = $"ì´ë¦„ : {(isAlien ? GenerateName() : name)}";
 
-        else if (countStar == 2)
-        {
-            //Debug.Log("2¹ø");
-            //Debug.Log("2¹ø GenerateName" + GenerateName());
-            //Debug.Log("2¹ø name" + name);
-            infoTextName.text = $"ÀÌ¸§ : {(isAlianCheck() ? GenerateName() : name)}";
-            infoTextINumText.text = "ÁÖ¹Î ¹øÈ£ : ";
-            infoTextINum.text = $"{INum}";
+            infoTextINumText.text = "ì£¼ë¯¼ ë²ˆí˜¸ : ";
+            infoTextINum.text = $"{(isAlien ? FalsifyINum() : INum)}";
+            infoTextEtc.text = $"ì£¼ì†Œ : {(isAlien ? GenerateAddress() :address)}\n" +
+                $"ë°œê¸‰ ì¼ì : {(isAlien ? GenerateIDate(INum.Substring(0, 8), isAlien) : pubDate)}\n" +
+                $"ë°œê¸‰ ì¥ì†Œ : {(isAlien ? GenerateAddress() : address)}ì²­";
 
-            infoTextEtc.text = $"ÁÖ¼Ò : {address}\n" +
-                $"¹ß±Ş ÀÏÀÚ : {pubDate}\n" +
-                $"¹ß±Ş Àå¼Ò : {address}Ã»";
-        }
-        else if (countStar == 3)
-        {
-            //Debug.Log("3¹ø GenerateName" + GenerateName());
-            //Debug.Log("3¹ø name" + name);
-            //Debug.Log("3¹ø pubDate" + pubDate);
-            infoTextName.text = $"ÀÌ¸§ : {(isAlianCheck() ? GenerateName() : name)}";
-
-            infoTextINumText.text = "ÁÖ¹Î ¹øÈ£ : ";
-            infoTextINum.text = $"{INum}";
-            //Debug.Log("3¹ø infoTextName.text" + infoTextName.text);
-            infoTextEtc.text = $"ÁÖ¼Ò : {address}\n" +
-                $"¹ß±Ş ÀÏÀÚ : {pubDate}\n" +
-                $"¹ß±Ş Àå¼Ò : {(isAlianCheck() ? GenerateAddress() : address)}Ã»";
-
-            //Debug.Log("3¹ø infoTextEtc.text" + infoTextEtc.text);
+            //Debug.Log("3ë²ˆ infoTextEtc.text" + infoTextEtc.text);
         }
         else
         {
-            Debug.Log("Àß¸øµÈ ¼³Á¤ÀÔ´Ï´Ù.");
+            Debug.Log("ì˜ëª»ëœ ì„¤ì •ì…ë‹ˆë‹¤.");
         }
-        //ÁÖ¹Îµî·ÏÁõ °ª ¼³Á¤
-        /*infoTextName.text = $"ÀÌ¸§ : {name}";
-        infoTextINumText.text = "ÁÖ¹Î ¹øÈ£ : ";
+        //ì£¼ë¯¼ë“±ë¡ì¦ ê°’ ì„¤ì •
+        /*infoTextName.text = $"ì´ë¦„ : {name}";
+        infoTextINumText.text = "ì£¼ë¯¼ ë²ˆí˜¸ : ";
         infoTextINum.text = $"{INum}";
-        infoTextEtc.text = $"ÁÖ¼Ò : {address}\n" +
-            $"¹ß±Ş ÀÏÀÚ : {pubDate}\n" +
-            $"¹ß±Ş Àå¼Ò : {address}Ã»";*/
+        infoTextEtc.text = $"ì£¼ì†Œ : {address}\n" +
+            $"ë°œê¸‰ ì¼ì : {pubDate}\n" +   
+            $"ë°œê¸‰ ì¥ì†Œ : {address}ì²­";*/
 
-        string MemoNum = GenerateINum();
+        
 
-        //¸Ş¸ğ°ª ¼³Á¤
-        textName.text = $"ÀÌ¸§ : {name}";
-        textINumText.text = "ÁÖ¹Î ¹øÈ£ : ";
-        textINum.text = $"{MemoNum}";
-        textEtc.text = $"ÁÖ¼Ò : {address}\n" +
-            $"¹ß±Ş ÀÏÀÚ : {GenerateIDate(MemoNum.Substring(0, 8), false)}\n" +
-            $"¹ß±Ş Àå¼Ò : {address}Ã»";
+        //ë©”ëª¨ê°’ ì„¤ì •
+        textName.text = $"ì´ë¦„ : {name}";
+        textINumText.text = "ì£¼ë¯¼ ë²ˆí˜¸ : ";
+        textINum.text = $"{INum}";
+        textEtc.text = $"ì£¼ì†Œ : {address}\n" +
+            $"ë°œê¸‰ ì¼ì : {pubDate}\n" +   //GenerateIDate(INum.Substring(0, 8), false)
+            $"ë°œê¸‰ ì¥ì†Œ : {address}ì²­";
 
         for (int i = 0; i < faceImgArr.Length; i++)
         {
             if (isAlien && i == 1)
-            { //i==1: ¸ŞÀÎ ¼Õ´Ô ÀÌ¹ÌÁö ÀÎµ¦½º
+            { //i==1: ë©”ì¸ ì†ë‹˜ ì´ë¯¸ì§€ ì¸ë±ìŠ¤
                 faceImgArr[i].sprite = alienData.faces[Random.Range(0, 7)];
                 eyeImgArr[i].sprite = alienData.eyes[Random.Range(0, 7)];
                 noseImgArr[i].sprite = alienData.noses[Random.Range(0, 7)];
                 mouthImgArr[i].sprite = alienData.mouths[Random.Range(0, 7)];
                 hairFrontImgArr[i].sprite = personData.hairs_front[idx[2]];
-                hairBackImgArr[i].sprite = personData.hairs_back[idx[2]];//¾Õ ¸Ó¸®¿Í µŞ ¸Ó¸® ·£´ı ¼±ÅÃ ÀÎµ¦½º °ª °°À½
+                hairBackImgArr[i].sprite = personData.hairs_back[idx[2]];//ì• ë¨¸ë¦¬ì™€ ë’· ë¨¸ë¦¬ ëœë¤ ì„ íƒ ì¸ë±ìŠ¤ ê°’ ê°™ìŒ
             }
             else
             {
                 faceImgArr[i].sprite = personData.faces[idx[0]];
                 eyeImgArr[i].sprite = personData.eyes[idx[1]];
                 hairFrontImgArr[i].sprite = personData.hairs_front[idx[2]];
-                hairBackImgArr[i].sprite = personData.hairs_back[idx[2]];//¾Õ ¸Ó¸®¿Í µŞ ¸Ó¸® ·£´ı ¼±ÅÃ ÀÎµ¦½º °ª °°À½
+                hairBackImgArr[i].sprite = personData.hairs_back[idx[2]];//ì• ë¨¸ë¦¬ì™€ ë’· ë¨¸ë¦¬ ëœë¤ ì„ íƒ ì¸ë±ìŠ¤ ê°’ ê°™ìŒ
                 noseImgArr[i].sprite = personData.noses[idx[3]];
                 mouthImgArr[i].sprite = personData.mouths[idx[4]];
             }
@@ -184,7 +149,7 @@ public class ShowPerson : MonoBehaviour
         return name;
     }
 
-    public string GenerateINum() // »ı³â¿ùÀÏ, ¼ºº° Á¤»ó°ª »ı¼º
+    public string GenerateINum() // ìƒë…„ì›”ì¼, ì„±ë³„ ì •ìƒê°’ ìƒì„±
     {
         string birthYear;
         bool isBornAfter2000 = (Random.Range(0, 2) == 1);
@@ -193,7 +158,7 @@ public class ShowPerson : MonoBehaviour
         else
             birthYear = Random.Range(60, 100).ToString("D2");
         string birthMonth = Random.Range(01, 13).ToString("D2");
-                                                //Æ¯Á¤ ´Ş ÀÎµ¦½º Á¢±Ù À§ÇØ - 1 ÇØ ÁÜ
+                                                //íŠ¹ì • ë‹¬ ì¸ë±ìŠ¤ ì ‘ê·¼ ìœ„í•´ - 1 í•´ ì¤Œ
         string birthDay = Random.Range(1, infoData.days[int.Parse(birthMonth) - 1 ] +1).ToString("D2");
         string gender = (Random.Range(1,3) + (isBornAfter2000 ? 2 : 0)).ToString();
         
@@ -215,12 +180,14 @@ public class ShowPerson : MonoBehaviour
         int year;
         int month=0;
         int day=0;
-
-        if (isAlien)
+        
+        if (isAlien) //ë¬´ì¡°ê±´ true
         {
+            
             year = Random.Range(1900, 2100);
             month = Random.Range(1, 13);
             day = Random.Range(1, 32);
+            
         }
         else
         {
@@ -228,13 +195,14 @@ public class ShowPerson : MonoBehaviour
             birthYear = (int.Parse(birthDate[7] + " ") > 2 ? 2000 : 1900) + int.Parse(birthDate.Substring(0, 2));
             birthMonth = int.Parse(birthDate.Substring(2, 2));
             birthDay = int.Parse(birthDate.Substring(4, 2));
+            
             //Debug.Log(birthDate+" "+birthYear+" "+birthMonth+" "+birthDay);
-            //¹ÎÁõÀº ¸¸ 17¼¼°¡ µÈ »ıÀÏ³¯ ´ÙÀ½ ³¯ºÎÅÍ 1³â °£ ¹ß±Ş °¡´É
+            //ë¯¼ì¦ì€ ë§Œ 17ì„¸ê°€ ëœ ìƒì¼ë‚  ë‹¤ìŒ ë‚ ë¶€í„° 1ë…„ ê°„ ë°œê¸‰ ê°€ëŠ¥
             year = Random.Range(birthYear + 17, birthYear + 17 + 2);
-            //¸¸ 17¼¼°¡ µÈ ÇØ¿¡ ¹ß±Ş ¹ŞÀ½
+            //ë§Œ 17ì„¸ê°€ ëœ í•´ì— ë°œê¸‰ ë°›ìŒ
             if (year == (birthYear + 17))
             {
-                month = Random.Range(birthMonth, 13); // »ıÀÏÀÌ ÀÖ´Â ´Ş ~ 12¿ù ¹ß±Ş
+                month = Random.Range(birthMonth, 13); // ìƒì¼ì´ ìˆëŠ” ë‹¬ ~ 12ì›” ë°œê¸‰
                 if (month == birthMonth) day = Random.Range(birthDay + 1, infoData.days[month - 1] + 1);
                 else
                 {
@@ -244,16 +212,16 @@ public class ShowPerson : MonoBehaviour
                     }
                     catch
                     {
-                        Debug.Log("¿À·ù ¹ß»ı : " + month + ", "+day);
+                        Debug.Log("ì˜¤ë¥˜ ë°œìƒ : " + month + ", "+day);
+                        
                     }
                 }
             }
-            //±× ´ÙÀ½ ÇØ¿¡ ¹ß±Ş ¹ŞÀ½
+            //ê·¸ ë‹¤ìŒ í•´ì— ë°œê¸‰ ë°›ìŒ
             else
             {
-                month = Random.Range(1, birthMonth + 1); //1¿ù ~ »ıÀÏÀÌ ÀÖ´Â ´Ş
+                month = Random.Range(1, birthMonth + 1); //1ì›” ~ ìƒì¼ì´ ìˆëŠ” ë‹¬
                 if (month == birthMonth) day = Random.Range(1, birthDay + 1);
-                else
                 {
                     try
                     {
@@ -261,7 +229,8 @@ public class ShowPerson : MonoBehaviour
                     }
                     catch
                     {
-                        Debug.Log("¿À·ù ¹ß»ı : " + month + ", " + day);
+                        Debug.Log("ì˜¤ë¥˜ ë°œìƒ2 : " + month + ", " + day);
+                        
                     }
                 }
             }
@@ -272,70 +241,72 @@ public class ShowPerson : MonoBehaviour
 
     public void CheckCustomer(int type)
     {
-        if(type == 2) //ÀÏ¹İ ¼Õ´ÔÀÎÁö Ã¼Å©
+        Debug.Log("ì™¸ê³„ì¸ì¸ì : " +isAlien);
+        if(type == 2) //ì¼ë°˜ ì†ë‹˜ì¸ì§€ ì²´í¬
         {
             if (isAlien == false && isTroubleMaker == false) GameManager.Instance.NPCheck++;
-            Debug.Log($"ÀÏ¹İ ¼Õ´Ô Á¤´ä ¼ö : {GameManager.Instance.NPCheck}");
+            Debug.Log($"ì¼ë°˜ ì†ë‹˜ ì •ë‹µ ìˆ˜ : {GameManager.Instance.NPCheck}");
         }
-        else if(type == 3) //Áø»óÀÎÁö Ã¼Å©
+        else if(type == 3) //ì§„ìƒì¸ì§€ ì²´í¬
         {
             if (isAlien == false && isTroubleMaker == true) GameManager.Instance.TMCheck++;
-            Debug.Log($"Áø»ó ¼Õ´Ô Á¤´ä ¼ö : {GameManager.Instance.TMCheck}");
+            Debug.Log($"ì§„ìƒ ì†ë‹˜ ì •ë‹µ ìˆ˜ : {GameManager.Instance.TMCheck}");
 
         }
-        else if(type == 4) //¿Ü°èÀÎÀÎÁö Ã¼Å©
+        else if(type == 4) //ì™¸ê³„ì¸ì¸ì§€ ì²´í¬
         {
             if (isAlien == true) GameManager.Instance.AlienCheck++;
-            Debug.Log($"¿Ü°èÀÎ Á¤´ä ¼ö : {GameManager.Instance.AlienCheck / GameManager.Instance.TotalAlien}");
+            Debug.Log($"ì™¸ê³„ì¸ ì •ë‹µ ìˆ˜ : {GameManager.Instance.AlienCheck }");
+            Debug.Log($"ì™¸ê³„ì¸ ì •ë‹µ ìˆ˜ : { GameManager.Instance.TotalAlien}");
         }
         
     }
 
-    // ÁÖ¹Î¹øÈ£ º¯Á¶
+    // ì£¼ë¯¼ë²ˆí˜¸ ë³€ì¡°
     public string FalsifyINum()
     {
-        int randomNum = (Random.Range(1, 4));    // º¯Á¶½ÃÅ³ ¹æ¹ı ¼¼ °¡Áö Áß ¾î¶² °ÍÀ¸·Î ÇÒÁö 1 ~ 3 Áß ·£´ı°ªÀ» ±¸ÇÔ
-        string INum;    // ÁÖ¹Î¹øÈ£
+        int randomNum = (Random.Range(1, 4));    // ë³€ì¡°ì‹œí‚¬ ë°©ë²• ì„¸ ê°€ì§€ ì¤‘ ì–´ë–¤ ê²ƒìœ¼ë¡œ í• ì§€ 1 ~ 3 ì¤‘ ëœë¤ê°’ì„ êµ¬í•¨
+        string INum;    // ì£¼ë¯¼ë²ˆí˜¸
 
         switch (randomNum)
         {
-            case 1: // Ã¹ ¹øÂ°, ÇöÀç ³¯Â¥ ±âÁØ¿¡ ¸ÂÁö ¾Ê´Â ¼ö (ex. 13¿ù 43ÀÏ)
+            case 1: // ì²« ë²ˆì§¸, í˜„ì¬ ë‚ ì§œ ê¸°ì¤€ì— ë§ì§€ ì•ŠëŠ” ìˆ˜ (ex. 13ì›” 43ì¼)
                 string birthYear;
-                bool isBornAfter2000 = (Random.Range(0, 2) == 1);       // ·£´ı°ªÀÌ 0ÀÌ¸é 1900³â´ë»ıÀ¸·Î false °ª ´ëÀÔ, ·£´ı°ªÀÌ 1ÀÌ¸é 2000³â´ë»ıÀ¸·Î true °ª ´ëÀÔ
-                if (isBornAfter2000)    // 2000³â´ë»ıÀÌ¸é
-                    birthYear = Random.Range(0, 10).ToString("D2");     // ÁÖ¹Î¹øÈ£ ¾Õ µÎ ÀÚ¸® 00 ~ 09
-                else                    // 1900³â´ë»ıÀÌ¸é 
-                    birthYear = Random.Range(0, 100).ToString("D2");    // ÁÖ¹Î¹øÈ£ ¾Õ µÎ ÀÚ¸® 00 ~ 99
-                int birthMonth = Random.Range(0, 100);   // ¿ù ºÎºĞ 00 ~ 99
+                bool isBornAfter2000 = (Random.Range(0, 2) == 1);       // ëœë¤ê°’ì´ 0ì´ë©´ 1900ë…„ëŒ€ìƒìœ¼ë¡œ false ê°’ ëŒ€ì…, ëœë¤ê°’ì´ 1ì´ë©´ 2000ë…„ëŒ€ìƒìœ¼ë¡œ true ê°’ ëŒ€ì…
+                if (isBornAfter2000)    // 2000ë…„ëŒ€ìƒì´ë©´
+                    birthYear = Random.Range(0, 10).ToString("D2");     // ì£¼ë¯¼ë²ˆí˜¸ ì• ë‘ ìë¦¬ 00 ~ 09
+                else                    // 1900ë…„ëŒ€ìƒì´ë©´ 
+                    birthYear = Random.Range(0, 100).ToString("D2");    // ì£¼ë¯¼ë²ˆí˜¸ ì• ë‘ ìë¦¬ 00 ~ 99
+                int birthMonth = Random.Range(0, 100);   // ì›” ë¶€ë¶„ 00 ~ 99
 
                 string birthDay;
 
-                if (birthMonth >= 1 && birthMonth <= 12)  // ¿ùÀÌ 1¿ù ~ 12¿ùÀÌ¸é
-                    birthDay = Random.Range(32, 100).ToString("D2");   // ÀÏÀ» 32 ~ 99·Î
+                if (birthMonth >= 1 && birthMonth <= 12)  // ì›”ì´ 1ì›” ~ 12ì›”ì´ë©´
+                    birthDay = Random.Range(32, 100).ToString("D2");   // ì¼ì„ 32 ~ 99ë¡œ
                 else
-                    birthDay = Random.Range(0, 100).ToString("D2");   // ÀÏÀ» 00 ~ 99·Î
-                string gender = Random.Range(0, 10).ToString();     // ÁÖ¹Î¹øÈ£ µŞÀÚ¸® Ã¹ ¹øÂ° ¼ıÀÚ´Â 0 ~ 9
+                    birthDay = Random.Range(0, 100).ToString("D2");   // ì¼ì„ 00 ~ 99ë¡œ
+                string gender = Random.Range(0, 10).ToString();     // ì£¼ë¯¼ë²ˆí˜¸ ë’·ìë¦¬ ì²« ë²ˆì§¸ ìˆ«ìëŠ” 0 ~ 9
 
                 return $"{birthYear}{birthMonth.ToString("D2")}{birthDay}-{gender}******";
-            case 2: // µÎ ¹øÂ°, Á¤»óÀûÀÎ ÁÖ¹Î¹øÈ£Áö¸¸, ¸Ş¸ğ¿Í °ªÀÌ ´Ù¸¥ °æ¿ì
-                INum = GenerateINum();   // Á¤»óÀûÀÎ ÁÖ¹Î¹øÈ£ »ı¼º
+            case 2: // ë‘ ë²ˆì§¸, ì •ìƒì ì¸ ì£¼ë¯¼ë²ˆí˜¸ì§€ë§Œ, ë©”ëª¨ì™€ ê°’ì´ ë‹¤ë¥¸ ê²½ìš°
+                INum = GenerateINum();   // ì •ìƒì ì¸ ì£¼ë¯¼ë²ˆí˜¸ ìƒì„±
                 string memoINum = GenerateINum();
 
-                while (INum.Equals(memoINum))   // ÁÖ¹Î¹øÈ£¿Í ¸Ş¸ğÀÇ »ı³â¿ùÀÏÀÌ ÀÏÄ¡ÇÏ´Ù¸é
+                while (INum.Equals(memoINum))   // ì£¼ë¯¼ë²ˆí˜¸ì™€ ë©”ëª¨ì˜ ìƒë…„ì›”ì¼ì´ ì¼ì¹˜í•˜ë‹¤ë©´
                 {
-                    INum = GenerateINum();   // ´Ù½Ã ÁÖ¹Î¹øÈ£ »õ·Î ¹ß±Ş
+                    INum = GenerateINum();   // ë‹¤ì‹œ ì£¼ë¯¼ë²ˆí˜¸ ìƒˆë¡œ ë°œê¸‰
                 }
 
                 return INum;
-            case 3: // ¼¼ ¹øÂ°, ÆùÆ®¸¦ ´Ù¸£°Ô ÇÏ´Â ¹æ¹ı
+            case 3: // ì„¸ ë²ˆì§¸, í°íŠ¸ë¥¼ ë‹¤ë¥´ê²Œ í•˜ëŠ” ë°©ë²•
                 INum = GenerateINum();
 
-                // ÆùÆ® º¯°æ
+                // í°íŠ¸ ë³€ê²½
                 infoTextINum.font = pyeongChangFont;
 
                 return INum;
             default:
-                return "¿¡·¯";
+                return "ì—ëŸ¬";
         }
     }
 }
